@@ -1,0 +1,30 @@
+.forecastItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 130px;
+  padding: 12px;
+  text-align: center;
+
+  &__date {
+    font-size: 18px;
+    opacity: 0.65;
+  }
+
+  &__time {
+    margin-top: 2px;
+    font-size: 28px;
+    opacity: 0.95;
+  }
+
+  &__icon {
+    width: 65px;
+    height: 65px;
+    margin: 8px 0;
+  }
+
+  &__degrees {
+    font-size: 40px;
+  }
+}

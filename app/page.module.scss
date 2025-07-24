@@ -1,0 +1,52 @@
+.page {
+  position: relative;
+  z-index: 2;
+  min-height: 100dvh;
+}
+
+// bg elements
+.linesBg {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  z-index: 0;
+  width: 100%;
+  min-width: 2560px;
+  user-select: none;
+}
+
+.roundsContainer {
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  height: 100%;
+  pointer-events: none;
+}
+
+.round {
+  position: absolute;
+  aspect-ratio: 1/1;
+  border-radius: 9999px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+
+  &.r1 {
+    left: -92px;
+    top: 87px;
+    width: 200px;
+    background: #3a2e47;
+  }
+  &.r2 {
+    top: 524px;
+    right: -44px;
+    width: 80px;
+    background: #272d3a;
+  }
+  &.r3 {
+    top: 603px;
+    right: -126px;
+    width: 150px;
+    background: #212f35;
+  }
+}

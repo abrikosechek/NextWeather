@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blockTemplate {
+  background: rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--border-block);
+  backdrop-filter: blur(8px);
+}
+
+.blockSm,
+.block {
+  @extend .blockTemplate;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.block {
+  width: 100%;
+}

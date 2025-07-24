@@ -1,0 +1,23 @@
+:root {
+  --border-block: #333333;
+  --text: #eeeeee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+}
+
+body {
+  background: linear-gradient(-45deg, #181616, #141414, #11171a);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: var(--text);
+}

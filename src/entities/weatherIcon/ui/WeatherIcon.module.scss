@@ -1,0 +1,16 @@
+.weatherIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+
+  &__inner {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+  }
+}
