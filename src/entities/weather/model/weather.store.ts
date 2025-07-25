@@ -1,24 +1,24 @@
-import { makeAutoObservable } from "mobx";
-import { weatherApi } from "../api";
+import { makeAutoObservable } from 'mobx';
+import { weatherApi } from '../api';
 import {
   ICurrentWeather,
   IWeatherForecast,
-} from "@/shared/model/weather.types";
+} from '@/shared/model/weather.types';
 
 type WeatherItem<T> =
   | {
-      state: "loading" | "error";
+      state: 'loading' | 'error';
       value: null | T;
     }
-  | { state: "complete"; value: T };
+  | { state: 'complete'; value: T };
 
 class Weather {
   currentWeather: WeatherItem<ICurrentWeather> = {
-    state: "loading",
+    state: 'loading',
     value: null,
   };
   weatherForecast: WeatherItem<IWeatherForecast> = {
-    state: "loading",
+    state: 'loading',
     value: null,
   };
 
@@ -31,12 +31,12 @@ class Weather {
       const response = await weatherApi.fetchCurrentWeather();
       this.currentWeather = {
         value: response.data,
-        state: "complete",
+        state: 'complete',
       };
       console.log(this.currentWeather.state);
     } catch (err) {
       console.log(err);
-      this.currentWeather.state = "error";
+      this.currentWeather.state = 'error';
     }
   }
 
@@ -45,11 +45,11 @@ class Weather {
       const response = await weatherApi.fetchWeatherForecast();
       this.weatherForecast = {
         value: response.data,
-        state: "complete",
+        state: 'complete',
       };
     } catch (err) {
       console.log(err);
-      this.currentWeather.state = "error";
+      this.currentWeather.state = 'error';
     }
   }
 }

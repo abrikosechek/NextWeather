@@ -1,1 +1,1 @@
-export { FeelsLike } from "./FeelsLike";
+export { FeelsLike } from './FeelsLike';

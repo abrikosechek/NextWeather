@@ -1,8 +1,8 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: [new URL("http://openweathermap.org/img/**")],
+    remotePatterns: [new URL('http://openweathermap.org/img/**')],
   },
 };
 

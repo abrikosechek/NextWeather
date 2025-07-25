@@ -1,22 +1,28 @@
-import styles from "./ForecastItem.module.scss"
-import containerStyles from "@/shared/styles/containers.module.scss"
-import { textDegrees } from "@/shared/utils/textDegrees"
-import { WeatherIcon } from "@/entities/weatherIcon"
+import styles from './ForecastItem.module.scss';
+import containerStyles from '@/shared/styles/containers.module.scss';
+import { textDegrees } from '@/shared/utils/textDegrees';
+import { WeatherIcon } from '@/entities/weatherIcon';
 
 interface Props {
-  date: string | number
-  icon: string
-  temp: number
+  date: string | number;
+  icon: string;
+  temp: number;
 }
 
 const getDateParts = (date: string | number) => {
   const dateObj = new Date(date);
   const userLocale = navigator.languages[0] || 'en-US';
   return {
-    day: dateObj.toLocaleDateString(userLocale, { month: 'short', day: 'numeric' }),
-    time: dateObj.toLocaleTimeString(userLocale, { hour: '2-digit', minute: '2-digit' })
+    day: dateObj.toLocaleDateString(userLocale, {
+      month: 'short',
+      day: 'numeric',
+    }),
+    time: dateObj.toLocaleTimeString(userLocale, {
+      hour: '2-digit',
+      minute: '2-digit',
+    }),
   };
-}
+};
 
 export const ForecastItem = ({ date, icon, temp }: Props) => {
   const { day, time } = getDateParts(date);
@@ -30,5 +36,5 @@ export const ForecastItem = ({ date, icon, temp }: Props) => {
       </div>
       <p className={`${styles.forecastItem__degrees}`}>{textDegrees(temp)}</p>
     </div>
-  )
-}
+  );
+};

@@ -1,2 +1,1 @@
-export { Wind } from "./Wind";
-
+export { Wind } from './Wind';

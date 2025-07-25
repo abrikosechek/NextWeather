@@ -1,1 +1,1 @@
-export { httpClient } from "./axiosInstance";
+export { httpClient } from './axiosInstance';

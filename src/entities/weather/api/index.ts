@@ -1,1 +1,1 @@
-export { weatherApi } from "./weatherApi";
+export { weatherApi } from './weatherApi';

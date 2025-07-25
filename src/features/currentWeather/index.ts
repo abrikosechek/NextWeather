@@ -1,1 +1,1 @@
-export { CurrentWeather } from "./ui";
+export { CurrentWeather } from './ui';

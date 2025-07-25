@@ -1,9 +1,8 @@
-import styles from "./WeatherIcon.module.scss"
-import Image from "next/image"
-
+import styles from './WeatherIcon.module.scss';
+import Image from 'next/image';
 
 interface Props {
-  iconCode: string
+  iconCode: string;
 }
 
 export const WeatherIcon = ({ iconCode }: Props) => {
@@ -12,10 +11,10 @@ export const WeatherIcon = ({ iconCode }: Props) => {
       <div className={styles.weatherIcon__inner}>
         <Image
           src={`http://openweathermap.org/img/wn/${iconCode}@4x.png`}
-          alt="weather"
+          alt='weather'
           fill={true}
         />
       </div>
     </div>
-  )
-}
+  );
+};
