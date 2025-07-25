@@ -7,9 +7,10 @@
 // bg elements
 .linesBg {
   position: fixed;
-  left: 0;
+  left: 50%;
   top: 80px;
   z-index: 0;
+  transform: translate(-50%, 0);
   width: 100%;
   min-width: 2560px;
   user-select: none;

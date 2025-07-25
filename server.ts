@@ -5,7 +5,7 @@ import next from "next";
 
 dotenv.config();
 
-const port = process.env.EXPRESS_PORT || 4040;
+const port = process.env.PORT || 4040;
 const weatherApiKey = process.env.WEATHER_API_KEY;
 const requestUnits = "metric";
 const dev = process.env.NODE_ENV !== "production";
