@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { observer } from 'mobx-react-lite';
-import { WeatherInfo } from '@/widgets/WeatherInfo';
+import { WeatherInfo } from '@/widgets/weatherInfo';
 import { weatherStore } from '@/entities/weather';
 
 export const WeatherInfoBlock = observer(() => {
