@@ -9,9 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/cors": "^2.8.19",
     "axios": "^1.10.0",
-    "cors": "^2.8.5",
     "dotenv": "^17.1.0",
     "mobx": "^6.13.7",
     "mobx-react-lite": "^4.1.0",
