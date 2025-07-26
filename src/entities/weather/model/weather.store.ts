@@ -33,7 +33,6 @@ class Weather {
         value: response.data,
         state: 'complete',
       };
-      console.log(this.currentWeather.state);
     } catch (err) {
       console.log(err);
       this.currentWeather.state = 'error';
