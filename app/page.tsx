@@ -1,7 +1,7 @@
 import containerStyles from '@/shared/styles/containers.module.scss';
 import styles from './page.module.scss';
 import linesDesktop from '@/shared/assets/bg-lines/lines-desktop.png';
-// import linesMobile from "@/shared/assets/bg-lines/lines-mobile.png";
+import linesMobile from '@/shared/assets/bg-lines/lines-mobile.png';
 import Image from 'next/image';
 import { WeatherInfoBlock } from './_ui/WeatherInfoBlock';
 
@@ -20,12 +20,20 @@ const Page = () => {
       </div>
 
       {/* bg lines */}
-      <Image
-        className={`${styles.linesBg}`}
-        src={linesDesktop}
-        alt='bg lines'
-        draggable='false'
-      />
+      <picture>
+        <source
+          className={`${styles.linesBg}`}
+          srcSet={linesDesktop.src}
+          media='(min-width: 600px)'
+          draggable='false'
+        />
+        <Image
+          className={`${styles.linesBg}`}
+          src={linesMobile}
+          alt='bg lines'
+          draggable='false'
+        />
+      </picture>
     </>
   );
 };
