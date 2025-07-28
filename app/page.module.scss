@@ -13,6 +13,7 @@
   transform: translate(-50%, 0);
   width: 100%;
   min-width: 2560px;
+  height: 670px;
   user-select: none;
 }
 
@@ -49,5 +50,36 @@
     right: -126px;
     width: 150px;
     background: #212f35;
+  }
+}
+
+@media (max-width: 650px) {
+  // bg elements
+  .linesBg {
+    top: 118px;
+    width: 870px;
+    min-width: unset;
+    height: 380px;
+  }
+
+  .round {
+    &.r1 {
+      left: -32px;
+      top: 170px;
+      width: 160px;
+      background: #3a2e47;
+    }
+    &.r2 {
+      top: 224px;
+      right: 45px;
+      width: 80px;
+      background: #272d3a;
+    }
+    &.r3 {
+      top: 324px;
+      right: -35px;
+      width: 150px;
+      background: #212f35;
+    }
   }
 }

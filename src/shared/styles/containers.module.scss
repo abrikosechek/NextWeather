@@ -21,3 +21,13 @@
 .block {
   width: 100%;
 }
+
+@media (max-width: 650px) {
+  .container {
+    width: 100%;
+    max-width: unset;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: unset;
+  }
+}

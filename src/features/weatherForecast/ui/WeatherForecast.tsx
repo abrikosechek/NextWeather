@@ -1,5 +1,4 @@
 import styles from './WeatherForecast.module.scss';
-import containerStyles from '@/shared/styles/containers.module.scss';
 import React from 'react';
 import { IWeatherForecastItem } from '@/shared/model/weather.types';
 import { ForecastItem } from './ForecastItem';
@@ -13,7 +12,7 @@ export const WeatherForecast = React.memo(function WeatherForecast({
 }: Props) {
   return (
     <div
-      className={`${styles.weatherForecast} ${containerStyles.container}`}
+      className={`${styles.weatherForecast}`}
       onTouchStart={(e) => e.stopPropagation()}
       onTouchMove={(e) => e.stopPropagation()}
     >
