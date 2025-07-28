@@ -1,7 +1,7 @@
 'use client';
 
-import styles from './CurrentWeather.module.scss';
 import containerStyles from '@/shared/styles/containers.module.scss';
+import styles from './CurrentWeather.module.scss';
 import { textDegrees } from '@/shared/utils/textDegrees';
 import { WeatherIcon } from '@/entities/weatherIcon';
 
